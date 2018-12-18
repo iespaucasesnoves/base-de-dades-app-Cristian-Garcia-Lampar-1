@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         bot1 = findViewById(R.id.botCamara);
         bot2 = findViewById(R.id.botContactos);
 
-        bot1.setOnClickListener(new View.OnClickListener() {
+ /*       bot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 1);
@@ -57,6 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}
+}*/
 
 }
