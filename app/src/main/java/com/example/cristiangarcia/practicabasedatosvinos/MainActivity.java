@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,9 +36,10 @@ public class MainActivity extends AppCompatActivity {
             // En fer onClick a un element de la llista cridam l'activity d'edició i passam la clau primària
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String s = (view.findViewById(R.id.ViID)).toString();
-                Intent in = new Intent(getApplicationContext(), EditaVi.class);
-                in.putExtra("ID", s);
+                TextView idvinito = findViewById(R.id.ViID);
+                String s = idvinito.getText().toString();
+                Intent in = new Intent(MainActivity.this, EditaVi.class);
+                in.putExtra("IDVINO", s);
                 startActivity(in);
             }
         });
@@ -47,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent in = new Intent(getApplicationContext(), EditaVi.class);
-                        in.putExtra("ID", "");
+                        Intent in = new Intent(getApplicationContext(), CrearVi.class);
+                        in.putExtra("IDVINO", "");
                         startActivity(in);
                     }
                 }

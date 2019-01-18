@@ -2,16 +2,16 @@ package com.example.cristiangarcia.practicabasedatosvinos;
 
 public class Vi {
     private long id;
-    private String nomVi;
-    private String anada;
-    private String tipus;
-    private String lloc;
-    private String graduacio;
-    private String data;
+    private String nomVi;//
+    private String anada;//
+    private String tipus;//
+    private String lloc;//
+    private String graduacio;//
+    private String data;//
     private String comentari;
-    private long idBodega;
-    private long idDenominacio;
-    private double preu;
+    private long idBodega;//
+    private long idDenominacio;//
+    private double preu;//
     private String valOlfativa;
     private String valGustativa;
     private String valVisual;

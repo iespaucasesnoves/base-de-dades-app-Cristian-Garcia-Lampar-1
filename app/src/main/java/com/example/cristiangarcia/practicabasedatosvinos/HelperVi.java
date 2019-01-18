@@ -83,6 +83,7 @@ public class HelperVi extends SQLiteOpenHelper {
         database.execSQL(" insert into " + TABLE_TIPUS + "(tipus) values(('Altres'))");
 
         database.execSQL("insert into " + TABLE_VI + "(nomvi) values(('Patata fumada'))");
+        database.execSQL("insert into " + TABLE_VI + "(nomvi) values(('Patata fumada'))");
     }
 
     @Override

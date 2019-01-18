@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PracticaBaseDatosVinos</string>
+    <string name="title_activity_crear_vi">CrearVi</string>
 </resources>
