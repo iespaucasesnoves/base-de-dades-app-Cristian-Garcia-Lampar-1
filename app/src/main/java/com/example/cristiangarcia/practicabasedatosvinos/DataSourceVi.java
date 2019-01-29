@@ -123,13 +123,14 @@ public class DataSourceVi {
         v.setData(cursor.getString(5));
         v.setComentari(cursor.getString(6));
         v.setIdBodega(cursor.getLong(7));
-        v.setIdBodega(cursor.getLong(8));
+        v.setIdDenominacio(cursor.getLong(8));
         v.setPreu(cursor.getFloat(9));
         v.setValOlfativa(cursor.getString(10));
         v.setValGustativa(cursor.getString(11));
         v.setValVisual(cursor.getString(12));
         v.setNota(cursor.getInt(13));
         v.setFoto(cursor.getString(14));
+        v.setTipus(cursor.getString(15));
         return v;
     }
 
