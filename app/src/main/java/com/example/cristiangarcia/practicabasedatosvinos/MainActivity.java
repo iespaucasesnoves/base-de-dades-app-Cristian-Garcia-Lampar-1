@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
-        Button btNou = findViewById(R.id.btn);
+        Button btNou = findViewById(R.id.btnCrear);
         btNou.setOnClickListener(
                 // Cridam l'activity d'edició indicant que es un insert (clau primària en blanc per exemple)
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent in = new Intent(getApplicationContext(), CrearVi.class);
+                        Intent in = new Intent(getApplicationContext(), EditaVi.class);
                         in.putExtra("IDVINO", "");
                         startActivity(in);
                     }
