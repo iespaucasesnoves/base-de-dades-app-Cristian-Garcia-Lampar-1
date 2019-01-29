@@ -19,6 +19,7 @@ public class DataSourceVi {
             HelperVi.COLUMN_VALOLFATIVA, HelperVi.COLUMN_VALGUSTATIVA,
             HelperVi.COLUMN_VALVISUAL, HelperVi.COLUMN_NOTA, HelperVi.COLUMN_FOTO,
             HelperVi.COLUMN_TIPUS};
+    private String[] tipos = {HelperVi.COLUMN__TIPUS};
 
     public DataSourceVi(Context context) { //CONSTRUCTOR
         dbAjuda = new HelperVi(context);
@@ -131,8 +132,23 @@ public class DataSourceVi {
         v.setFoto(cursor.getString(14));
         return v;
     }
-    //CREAREM EL MÈTODES QUE ENS FACIN FALTA EN FUNCIÓ DE LA NOSTRA BASE DE DADES
 
+
+    //CREAREM EL MÈTODES QUE ENS FACIN FALTA EN FUNCIÓ DE LA NOSTRA BASE DE DADES
+    public List<String> getAllTipus() {
+        List<String> vins = new ArrayList<>();
+        Cursor cursor = database.query(HelperVi.TABLE_TIPUS, tipos, null, null, null, null,
+                HelperVi.COLUMN_DATA + " DESC");
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            String tipo = cursorTipos(cursor);
+            vins.add(tipo);
+            cursor.moveToNext();
+        }
+        // Make sure to close the cursor
+        cursor.close();
+        return vins;
+    }
 
 }
 

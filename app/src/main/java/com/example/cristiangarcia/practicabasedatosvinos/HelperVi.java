@@ -7,22 +7,23 @@ import android.util.Log;
 
 public class HelperVi extends SQLiteOpenHelper {
     public static final String TABLE_VI = "vi";
-    public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_NOMVI = "nomvi";
-    public static final String COLUMN_ANADA = "anada";
-    public static final String COLUMN_TIPUS = "tipus";
-    public static final String COLUMN_LLOC = "lloc";
-    public static final String COLUMN_GRADUACIO = "graduacio";
-    public static final String COLUMN_DATA = "data";
-    public static final String COLUMN_COMENTARI = "comentari";
-    public static final String COLUMN_IDBODEGA = "idbodega";
-    public static final String COLUMN_IDDENOMINACIO = "iddenominacio";
-    public static final String COLUMN_PREU = "preu";
+    public static final String COLUMN_ID = "_id"; //autoincrement
+    public static final String COLUMN_NOMVI = "nomvi"; //puesto
+    public static final String COLUMN_ANADA = "anada";//puesto
+    public static final String COLUMN_TIPUS = "tipus";//puesto
+    public static final String COLUMN_LLOC = "lloc";//puesto
+    public static final String COLUMN_GRADUACIO = "graduacio";//puesto
+    public static final String COLUMN_DATA = "data";//puesto
+    public static final String COLUMN_COMENTARI = "comentari";//puesto
+    public static final String COLUMN_IDBODEGA = "idbodega";//puesto
+    public static final String COLUMN_IDDENOMINACIO = "iddenominacio"; //puesto
+    public static final String COLUMN_PREU = "preu";//puesto
     public static final String COLUMN_VALOLFATIVA = "valolfativa";
     public static final String COLUMN_VALGUSTATIVA = "valgustativa";
     public static final String COLUMN_VALVISUAL = "valvisual";
     public static final String COLUMN_NOTA = "nota";
     public static final String COLUMN_FOTO = "foto";
+
     public static final String TABLE_BODEGA = "bodega";
     public static final String COLUMN__IDBODEGA = "_idbodega";
     public static final String COLUMN_NOMBODEGA = "nombodega";
