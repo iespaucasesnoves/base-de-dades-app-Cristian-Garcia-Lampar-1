@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
             map.put("nomVi", vi.getNomVi());
             map.put("data", vi.getData());
             map.put("tipus", vi.getTipus());
+            map.put("preu", String.valueOf(vi.getPreu()));
+            map.put("nota", String.valueOf(vi.getNota()));
+            map.put("comentario", vi.getComentari());
             llista.add(map);
         }
 
@@ -80,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
         bd.close();
         //Assignar a la listview
         adapter = new SimpleAdapter(this, llista, R.layout.llistavins,
-                new String[]{"id", "nomVi", "data", "tipus"},
-                new int[]{R.id.ViID, R.id.ViName, R.id.ViFecha, R.id.ViTipo});
+                new String[]{"id", "nomVi", "data", "tipus", "preu", "nota", "comentario"},
+                new int[]{R.id.ViID, R.id.viName, R.id.viFecha, R.id.viTipo, R.id.viPreu, R.id.viNota, R.id.viComentario});
         lv.setAdapter(adapter);
     }
 }

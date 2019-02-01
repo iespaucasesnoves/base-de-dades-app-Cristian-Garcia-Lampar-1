@@ -139,7 +139,7 @@ public class DataSourceVi {
         tipo = cursor.getString(0);
         return tipo;
     }
-    
+
     public List<String> getAllTipus() {
         List<String> vins = new ArrayList<>();
         Cursor cursor = database.query(HelperVi.TABLE_TIPUS, tiposVino, null, null, null, null,
